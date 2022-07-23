@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rimachi Survey Form</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Rimachi Survey Form</h1>
+          <p id="description">Thank you for taking the time to help us improve our taller.</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" class="name">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
+        </div>
+        <div class="form-group">
+          <label id="email-label" class="email">Email: <input type="email" id="email" placeholder="Enter your email" required /></label>
+        </div>
+        <div class="form-group">
+          <label id="number-label" class="age">Age: <span class="clue" >(optional)</span></label>
+          <input type="number" id="number" min="18" max="110" placeholder="Age" required />
+        </div>
+        <div class="form-group">
+          <p class="role">Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control">
+            <option disabled selected value >Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="learner">Full time learner</option>
+            <option value="artist">Artist</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="role">Would you recommend the Rimachi's taller to a friend?</p>
+          <label><input type="radio" name="user-recommend" value="definitely" class="input-radio" checked />Definitely</label>
+          <label><input type="radio" name="user-recommend" value="maybe" class="input-radio" />Maybe</label>
+          <label><input type="radio" name="user-recommend" value="not-sure" class="input-radio" />Not sure</label>
+        </div>
+        <div class="form-group">
+          <p class="role">What would you like to learn?<span class="clue">(you can mark more than one option)</span></p>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="design" />Design</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="concept" />Concept Art</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="classicIll" />Classic Illustration</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="sculpture" />Sculpture</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="photo" />Photography</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="scriptwritting" />Scriptwriting</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="oil" />Oil Painting</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="animation" />2D Animation</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="3danimation" />3D Animation</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="artDirection" />Art Direction</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="drawing" />Drawing</label>
+          <label><input type="checkbox" name="prefer" class="input-checkbox" value="comic" />Comic</label>
+        </div>
+        <div>
+          <p class="role">Any comments or suggestions?</p>
+          <textarea id="comments" class="textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
