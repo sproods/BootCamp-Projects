@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <nav id="navbar">
+      <header>C Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction" >Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#what_you_should_already_know" >What you should already know</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#c_y_cpp" >C y C++</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#hello_world" >Hello world</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#comments" >Comments</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#pointers" >Pointers</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#pointer_declaration" >Pointer declaration</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#arrays" >Arrays</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#array_declaration" >Array declaration</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#references" >References</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly for application software, and is common in computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.
+        </p>
+        <p>
+          C is an imperative procedural language supporting structured programming, lexical variable scope, and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code.
+<br><br>
+Since 2000, C has consistently ranked among the top two languages in the TIOBE index, a measure of the popularity of programming languages.
+<br><br>
+10 Most Important Features of C Language:
+        </p>
+        <ul>
+          <li>
+            <strong>Simple and Efficient</strong>
+            <br>
+The basic syntax style of implementing C language is very simple and easy to learn. This makes the language easily comprehensible and enables a programmer to redesign or create a new application. C is usually used as an introductory language to introduce programming to school students because of this feature.
+          </li>
+          <li>
+            <strong>Fast</strong><br>
+It is a well-known fact that statically typed programming languages are faster than dynamic ones. C is a statically typed programming language, which gives it an edge over other dynamic languages. Also, unlike Java and Python, which are interpreter-based, C is a compiler-based program. This makes the compilation and execution of codes faster.
+<br><br>
+Another factor that makes C fast is the availability of only the essential and required features. Newer programming languages come with numerous features, which increase functionality but reduce efficiency and speed. Since C offers limited but essential features, the headache of processing these features reduces, resulting in increased speed.
+          </li>
+          <li>
+            <strong>Portability</strong><br>
+Another feature of the C language is portability. To put it simply, C programs are machine-independent which means that you can run the fraction of a code created in C on various machines with none or some machine-specific changes. Hence, it provides the functionality of using a single code on multiple systems depending on the requirement.
+          </li>
+          <li>
+            <strong>Extensibility</strong><br>
+You can easily (and quickly) extend a C program. This means that if a code is already written, you can add new features to it with a few alterations. Basically, it allows adding new features, functionalities, and operations to an existing C program.
+          </li>
+          <li>
+            <strong>Function-Rich Libraries</strong><br>
+C comes with an extensive set of libraries with several built-in functions that make the life of a programmer easy. Even a beginner can easily code using these built-in functions. You can also create your user-defined functions and add them to C libraries. The availability of such a vast scope of functions and operations allows a programmer to build a vast array of programs and applications.
+          </li>
+          <li>
+            <strong>Dynamic Memory Management</strong><br>
+One of the most significant features of C language is its support for dynamic memory management (DMA). It means that you can utilize and manage the size of the data structure in C during runtime. C also provides several predefined functions to work with memory allocation. For instance, you can use the free() function to free up the allocated memory at any time. Similarly, there are other functions such as malloc(), calloc(), and realloc() to perform operations on data structure and memory allocations.
+          </li>
+          <li>
+            <strong>Modularity With Structured Language</strong><br>
+C is a general-purpose structured language. This feature of C language allows you to break a code into different parts using functions which can be stored in the form of libraries for future use and reusability.. Structuring the code using functions increases the visual appeal and makes the program more organized and less prone to errors.
+          </li>
+          <li>
+            <strong>Mid-Level Programming Language</strong><br>
+Although C was initially developed to do only low-level programming, it now also supports the features and functionalities of high-level programming, making it a mid-level language. And as a mid-level programming language, it provides the best of both worlds. For instance, C allows direct manipulation of hardware, which high-level programming languages do not offer.
+          </li>
+          <li>
+            <strong>Pointers</strong><br>
+With the use of pointers in C, you can directly interact with memory. As the name suggests, pointers point to a specific location in the memory and interact directly with it. Using the C pointers, you can operate with memory, arrays, functions, and structures.
+          </li>
+          <li>
+            <strong>Recursion</strong><br>
+C language provides the feature of recursion. Recursion means that you can create a function that can call itself multiple times until a given condition is true, just like the loops. Recursion in C programming provides the functionality of code reusability and backtracking.
+          </li>
+        </ul>
+        <code></code>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="what_you_should_already_know">
+        <header>What you should already know</header>
+        <p>In order to be able to handle this language with fluency and understanding, we assume that you have knowledge, at least basic, in:</p>
+        <ul>
+          <li>
+            Programming fundamentals.
+          </li>
+          <li>
+            Basic knowledge of algorithms.
+          </li>
+          <li>
+            Basic notions of database structure.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="c_y_cpp">
+        <header>C y C++</header>
+        <h4>Similarities</h4>
+        <ul>
+          <li>
+            Both languages have a similar syntax.
+          </li>
+          <li>
+            The code structure of both languages is the same.
+          </li>
+          <li>
+            The compilation of both languages is similar.
+          </li>
+          <li>
+            They share the same basic syntax. Almost all the operators and keywords in C are also present in C++ and do the same thing.
+          </li>
+          <li>
+            C++ has a slightly extended grammar than C, but the basic grammar is the same.
+          </li>
+          <li>
+            The basic memory model of both is very close to the hardware.
+          </li>
+          <li>
+            The same notions of stack, heap, file scope, and static variables are present in both languages.
+          </li>
+        </ul>
+        <h4>
+          Some differences between C and C++
+        </h4>
+        <h4>C</h4>
+        <ul>
+          <li>
+            C does not support polymorphism, encapsulation, or inheritance, which means that C does not support object-oriented programming.
+          </li>
+          <li>
+            Data and functions are separated in C because it is a procedural programming language.
+          </li>
+          <li>
+            Namespace features are not present within C.
+          </li>
+          <li>
+            Rather than focus on data, C focuses on method or process.
+          </li>
+        </ul>
+        <h4>C++</h4>
+        <ul>
+          <li>
+            C++ supports polymorphism, encapsulation, and inheritance because it is an object-oriented programming language.
+          </li>
+          <li>
+            Data and functions are encapsulated together in the form of an object in C ++.
+          </li>
+          <li>
+            C ++ uses the name space, which avoids name collisions.
+          </li>
+          <li>
+            C ++ focuses on data instead of focusing on the method or procedure.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="hello_world">
+        <header>Hello world</header>
+        <article>
+          The "hello, world" example, which appeared in the first edition of K&R, has become the model for an introductory program in most programming textbooks. The program prints "hello, world" to the standard output, which is usually a terminal or screen display.
+<br>
+The original version was:
+        <code>
+          main() {printf("Hello world\n");}
+        </code>
+          A standard-conforming "hello, world" program is:
+          <code>
+            #include <"stdio.h"> int main(void){printf"hello, world\n");}
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="comments">
+        <header>Comments</header>
+        <article>
+          <p>
+            Comments serve as a sort of in-code documentation. When inserted into a program, they are effectively ignored by the compiler; they are solely intended to be used as notes by the humans that read source code.
+          </p>
+          <p>
+            C-style comments are usually used to comment large blocks of text or small fragments of code; however, they can be used to comment single lines. To insert text as a C-style comment, simply surround the text with /* and */. C-style comments tell the compiler to ignore all content between /* and */. Although it is not part of the C standard, /** and */ are often used to indicate documentation blocks; this is legal because the second asterisk is simply treated as part of the comment.
+          </p>
+          <p>
+            Except within a character constant, a string literal, or a comment, the characters /* introduce a comment. The contents of such a comment are examined only to identify multibyte characters and to find the characters */ that terminate the comment. C-style comments cannot be nested.
+          </p>
+          <p>
+            Syntax:
+            <code>
+              /* comments */
+              // commnets
+            </code>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="pointers">
+        <header>Pointers</header>
+        <article>
+          <p>
+            C supports the use of pointers, a type of reference that records the address or location of an object or function in memory. Pointers can be dereferenced to access data stored at the address pointed to, or to invoke a pointed-to function. Pointers can be manipulated using assignment or pointer arithmetic. The run-time representation of a pointer value is typically a raw memory address (perhaps augmented by an offset-within-word field), but since a pointer's type includes the type of the thing pointed to, expressions including pointers can be type-checked at compile time. Pointer arithmetic is automatically scaled by the size of the pointed-to data type. Pointers are used for many purposes in C. Text strings are commonly manipulated using pointers into arrays of characters. Dynamic memory allocation is performed using pointers. Many data types, such as trees, are commonly implemented as dynamically allocated struct objects linked together using pointers. Pointers to functions are useful for passing functions as arguments to higher-order functions (such as qsort or bsearch) or as callbacks to be invoked by event handlers.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="pointer_declaration">
+        <header>Pointer declaration</header>
+        <article>
+          <p>
+            Pointer is a type of an object that refers to a function or an object of another type, possibly adding qualifiers. Pointer may also refer to nothing, which is indicated by the special null pointer value.
+          </p>
+          <p>
+            Syntax:
+          </p>
+          <p>
+            In the declaration grammar of a pointer declaration, the type-specifier sequence designates the pointed-to type (which may be function or object type and may be incomplete), and the declarator has the form:
+            <code>
+              * attr-spec-seq(optional) qualifiers(optional) declarator	
+            </code>
+          </p>
+          <p>
+            where declarator may be the identifier that names the pointer being declared, including another pointer declarator (which would indicate a pointer to a pointer):
+            <code>
+              float *p, **pp; // p is a pointer to float
+                // pp is a pointer to a pointer to float
+int (*fp)(int); // fp is a pointer to function with type int(int)
+            </code>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="arrays">
+        <header>Arrays</header>
+        <article>
+          <p>
+            Array types in C are traditionally of a fixed, static size specified at compile time. The more recent C99 standard also allows a form of variable-length arrays. However, it is also possible to allocate a block of memory (of arbitrary size) at run-time, using the standard library's malloc function, and treat it as an array.
+          </p>
+          <p>
+            Since arrays are always accessed (in effect) via pointers, array accesses are typically not checked against the underlying array size, although some compilers may provide bounds checking as an option.[34][35] Array bounds violations are therefore possible and can lead to various repercussions, including illegal memory accesses, corruption of data, buffer overruns, and run-time exceptions.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="array_declaration">
+        <header>Array declaration</header>
+        <article>
+          <p>
+            Array is a type consisting of a contiguously allocated nonempty sequence of objects with a particular element type. The number of those objects (the array size) never changes during the array lifetime.
+          </p>
+          <p>
+            In the declaration grammar of an array declaration, the type-specifier sequence designates the element type (which must be a complete object type), and the declarator has the form:
+            <code>
+              [ static(optional) qualifiers(optional) expression(optional) ] attr-spec-seq(optional)
+            </code>
+            <code>
+              [ qualifiers(optional) static(optional) expression(optional) ] attr-spec-seq(optional)
+            </code>
+            <code>
+              [ qualifiers(optional) * ] attr-spec-seq(optional)
+            </code>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="references">
+        <header>References</header>
+        <article>
+          <p>
+            Much of the documentation on this page was obtained from the following references:
+          </p>
+          <ul>
+            <li>
+              Differences between C and C++ from  <a href="https://es.acervolima.com/diferencia-entre-c-y-c/" target="_blank">Acervo Lima</a>
+            </li>
+            <li>
+              C (programming language) from <a href="https://en.wikipedia.org/wiki/C_(programming_language)#:~:text=C%20(%2F%CB%88si%CB%90%2F,capabilities%20of%20the%20targeted%20CPUs." target="_blank">Wikipedia</a>
+            </li>
+            <li>
+              C programing language form <a href="https://devdocs.io/c/" targer="_blank">DevDocs</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
