@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
   <body>
     <nav id="navbar">
       <header>C Documentation</header>
@@ -12,7 +17,7 @@
           <a class="nav-link" href="#what_you_should_already_know" >What you should already know</a>
         </li>
         <li>
-          <a class="nav-link" href="#c_y_cpp" >C y C++</a>
+          <a class="nav-link" href="#c_y_c++" >C y C++</a>
         </li>
         <li>
           <a class="nav-link" href="#hello_world" >Hello world</a>
@@ -34,6 +39,12 @@
         </li>
         <li>
           <a class="nav-link" href="#references" >References</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#memory_management" >Memory Management</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#libraries" >Libraries</a>
         </li>
       </ul>
     </nav>
@@ -117,7 +128,7 @@ C language provides the feature of recursion. Recursion means that you can creat
           </li>
         </ul>
       </section>
-      <section class="main-section" id="c_y_cpp">
+      <section class="main-section" id="c_y_c++">
         <header>C y C++</header>
         <h4>Similarities</h4>
         <ul>
@@ -275,6 +286,33 @@ int (*fp)(int); // fp is a pointer to function with type int(int)
               [ qualifiers(optional) * ] attr-spec-seq(optional)
             </code>
           </p>
+        </article>
+      </section>
+      <section class="main-section" id="memory_management">
+        <header>Memory management</header>
+        <article>
+            <p>
+                One of the most important functions of a programming language is to provide facilities for managing memory and the objects that are stored in memory. C provides three principal ways to allocate memory for objects:
+            </p>
+            <ul>
+                <li>
+                    Static memory allocation: space for the object is provided in the binary at compile-time; these objects have an extent (or lifetime) as long as the binary which contains them is loaded into memory.
+                </li>
+                <li>
+                    Automatic memory allocation: temporary objects can be stored on the stack, and this space is automatically freed and reusable after the block in which they are declared is exited.
+                </li>
+                <li>
+                    Dynamic memory allocation: blocks of memory of arbitrary size can be requested at run-time using library functions such as <code>malloc</code> from a region of memory called the heap; these blocks persist until subsequently freed for reuse by calling the library function <code>realloc</code> or <code>free</code>
+                </li>
+            </ul>
+        </article>
+      </section>
+      <section class="main-section" id="libraries">
+        <header>Libraries</header>
+        <article>
+            <p>
+                The C programming language uses libraries as its primary method of extension. In C, a library is a set of functions contained within a single "archive" file. Each library typically has a header file, which contains the prototypes of the functions contained within the library that may be used by a program, and declarations of special data types and macro symbols used with these functions. In order for a program to use a library, it must include the library's header file, and the library must be linked with the program, which in many cases requires compiler flags (e.g., <code>-lm</code>, shorthand for "link the math library").
+            </p>
         </article>
       </section>
       <section class="main-section" id="references">
