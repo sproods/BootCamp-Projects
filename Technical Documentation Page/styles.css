@@ -78,7 +78,7 @@ code {
     white-space: pre-line;
     position: relative;
     word-break: normal;
-    word-wrap: unset;
+    word-wrap: normal;
     line-height: 2;
     color: #52ebd1;
     background-color: #333333a4;
@@ -87,17 +87,16 @@ code {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 800px) {
     /* Phones */
     #navbar ul {
         border: 1px solid;
         height: 207px;
     }
 
-
     #navbar {
         background-color: #0d1818;
-        position: absolute;
+        position: relative;
         top: 0;
         padding: 0;
         margin: 0;
@@ -115,9 +114,9 @@ code {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
     #main-doc {
-        margin-left: -10px;
+        margin-left: 10px;
     }
 
     code {
