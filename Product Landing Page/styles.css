@@ -175,7 +175,18 @@ nav > ul {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: darkorange;
+}
+
+.fa-solid {
+    font-size: 3em;
+    color: rgb(64, 117, 141);
+    margin-left: 70%;
+}
+
+.fa-brands {
+    font-size: 3em;
+    color: rgb(64, 117, 141);
+    margin-left: 70%;
 }
 
 @media (max-width: 550px) {
