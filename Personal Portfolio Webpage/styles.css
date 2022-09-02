@@ -1,13 +1,14 @@
 :root {
     --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
+    --main-red: #3e1257;
+    --main-blue: #92a343;
+    --main-gray: #333d32;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 *::before, *::after {
@@ -39,7 +40,7 @@ html {
 }
 
 body {
-    font-family: 'Popins', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.4;
@@ -47,7 +48,7 @@ body {
 }
 
 h1, h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     text-align: center;
 }
@@ -91,6 +92,7 @@ img {
 .nav-list {
     display: flex;
     margin-right: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
  @media (max-width: 28.75em) {
@@ -111,6 +113,7 @@ img {
 
  .nav-list a:hover {
     background: var(--main-blue);
+    color: #000000;
  }
 
  /* welcome section */
@@ -123,14 +126,23 @@ img {
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(62deg, #4e7fb1 0%, #181719 100%);
+    background-image: linear-gradient(45deg, #a33d33 0%, #350e0b 30%, #350e0b 65%, #a33d33 100%);
  }
 
  .welcome-section p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: red;
+    margin-top: 42px;
+ }
+
+ .welcome-section h2 {
+    font-size: 2.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(155, 155, 155);
  }
 
  /* Projects section */
@@ -144,7 +156,8 @@ img {
  .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
+    border-left: 0.2rem solid var(--main-white);
+    border-right: 0.2rem solid var(--main-white);
  }
 
  @media (max-width: 28.75em) {
@@ -157,8 +170,8 @@ img {
 
  .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 0rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -187,22 +200,33 @@ img {
  }
 
  .project:hover .code {
-    color: #ff7f50;
+    color: #54d642;
  }
 
  .project-image {
-    height: cal(100% - 6.8rem);
+    height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
+    transition: transform 0.1s ease-out;
+ }
+
+ .project-image:hover {
+    transform: scale(0.9);
  }
 
  .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
+    transition: color 0.3s ease-out;
+ }
+
+ .project:hover .project-title {
+    color: orangered;
  }
 
  .btn {
     display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 1rem 2rem;
     border-radius: 2px;
  }
